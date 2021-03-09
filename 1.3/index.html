@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+    <style>
+        div:after {
+            content: attr(data-text);
+            color: red;
+        }
+    </style> 
+</head>
+<body>
+    <div data-text=" Еще текст">Test</div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script>
+        $(function(){
+            $('div').attr('data-text',' И еще текст');
+        });
+    </script> 
+</body>
